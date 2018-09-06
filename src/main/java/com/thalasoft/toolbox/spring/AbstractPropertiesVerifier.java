@@ -2,8 +2,6 @@ package com.thalasoft.toolbox.spring;
 
 import java.lang.reflect.Field;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
@@ -12,8 +10,6 @@ import org.springframework.core.PriorityOrdered;
 import org.springframework.core.env.Environment;
 
 public abstract class AbstractPropertiesVerifier implements BeanFactoryPostProcessor, PriorityOrdered {
-
-    private static Logger logger = LoggerFactory.getLogger(AbstractPropertiesVerifier.class);
 
     Class configurationClass;
 
