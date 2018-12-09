@@ -2,7 +2,15 @@ package com.thalasoft.toolbox.utils;
 
 import java.util.UUID;
 
-public class Common {
+public class CommonTools {
+
+  public static String formatSortableStringNumber(int num, int digits) {
+    String output = Integer.toString(num);
+    while (output.length() < digits) {
+      output = "0" + output;
+    }
+    return output;
+  }
 
 	public static String generateUniqueId(int length) {
 		return UUID.randomUUID().toString().substring(0, length);
